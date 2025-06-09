@@ -10,13 +10,19 @@ public class IngredientTypeTest {
 
     @Test
     public void sauceTest() {
-        assertEquals("Ожидаемый тип ингредиента " + SAUCE + ", но был получен " + IngredientType.SAUCE.toString(), SAUCE, IngredientType.SAUCE.toString());
+        assertEquals(
+                String.format("Ожидаемый тип ингредиента %s, но был получен %s", SAUCE, IngredientType.SAUCE),
+                SAUCE,
+                IngredientType.SAUCE.toString());
     }
 
 
     @Test
     public void fillingTest() {
-        assertEquals("Ожидаемый тип ингредиента " + FILLING + ", но был получен " + IngredientType.FILLING.toString(), FILLING, IngredientType.FILLING.toString());
+        assertEquals(
+                String.format("Ожидаемый тип ингредиента %s, но был получен %s", FILLING, IngredientType.FILLING),
+                FILLING,
+                IngredientType.FILLING.toString());
     }
 
 }
